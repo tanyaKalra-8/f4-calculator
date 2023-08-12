@@ -19,9 +19,6 @@ function App() {
 
   // console.log(num1 , num2);
 
-  let messageColorClass = '';
-
-
   const calculateResult = (operation) => {
     setMessage('');
     setResult('');
@@ -111,7 +108,7 @@ function App() {
         </div>
 
         <div className="foot-container">
-          {message && <p id={`${message=='Error!' ? 'error' : 'success'}`} className="message">{message}</p>}
+          {message && <p id={`${message==='Error!' ? 'error' : 'success'}`} className="message">{message}</p>}
           {result && <p className="result message">{result}</p>}
         </div>
       </div>
